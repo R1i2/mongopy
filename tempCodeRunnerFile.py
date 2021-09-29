@@ -1,0 +1,1 @@
+SERT INTO student(STUDENTID, name, age, marks) VALUES (2,'Dumbledore',59,89);")
