@@ -3,3 +3,5 @@ CREATE TABLE customers (
   name STRING,
   address STRING,
   PRIMARY KEY (id));
+
+INSERT INTO customers (1, "Angella", "12 Down Town");
