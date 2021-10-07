@@ -5,3 +5,8 @@ CREATE TABLE customers (
   PRIMARY KEY (id));
 
 INSERT INTO customers (1, "Angella", "12 Down Town");
+
+CREATE TABLE products (id INT NOT NULL,name STRING,price MONEY,stock INT);
+INSERT INTO products (id,name,price) VALUES (1,"pen",23.22);
+INSERT INTO products VALUES (2,"pencil",3.32,32);
+UPDATE products SET stock=16 WHERE id=1;
