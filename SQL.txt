@@ -13,3 +13,6 @@ UPDATE products SET stock=16 WHERE id=1;
 
 CREATE TABLE orders (id INT NOT NULL, order_id INT,customer_id INT,product_id INT,PRIMARY KEY (id),FOREIGN KEY (customer_id) REFERENCES customers(id),
                     FOREIGN KEY (product_id) REFERENCES products(id));
+
+INSERT INTO orders VALUES (1,45231,1,2);
+INSERT INTO orders VALUES (2,34213,2,1);
