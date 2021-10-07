@@ -10,3 +10,6 @@ CREATE TABLE products (id INT NOT NULL,name STRING,price MONEY,stock INT);
 INSERT INTO products (id,name,price) VALUES (1,"pen",23.22);
 INSERT INTO products VALUES (2,"pencil",3.32,32);
 UPDATE products SET stock=16 WHERE id=1;
+
+CREATE TABLE orders (id INT NOT NULL, order_id INT,customer_id INT,product_id INT,PRIMARY KEY (id),FOREIGN KEY (customer_id) REFERENCES customers(id),
+                    FOREIGN KEY (product_id) REFERENCES products(id));
