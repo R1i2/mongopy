@@ -16,3 +16,5 @@ CREATE TABLE orders (id INT NOT NULL, order_id INT,customer_id INT,product_id IN
 
 INSERT INTO orders VALUES (1,45231,1,2);
 INSERT INTO orders VALUES (2,34213,2,1);
+
+SELECT orders.order_id,customers.name,customers.address FROM orders INNER JOIN customers ON orders.customer_id = customers.id;
